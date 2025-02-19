@@ -31,21 +31,21 @@
    - 支持分页查询
 
 ## 项目结构
-springboot_project/
-├── src/main/java/org/example/springboot_project/
-│   ├── common/           // 公共组件
-│   │   ├── CorsConfig.java     // 跨域配置
-│   │   ├── JwtInterceptor.java // JWT拦截器
-│   │   ├── Result.java         // 统一返回结果
-│   │   └── WebConfig.java      // Web配置
-│   ├── controller/      // 控制器层
-│   ├── dao/            // 数据访问层
-│   ├── entity/         // 实体类
-│   ├── exception/      // 异常处理
-│   └── service/        // 服务层
-└── resources/
-    ├── application.yml  // 配置文件
-    └── mapper/         // MyBatis映射文件
+    springboot_project/
+    ├── src/main/java/org/example/springboot_project/
+    │   ├── common/           # 公共组件
+    │   │   ├── CorsConfig.java     # 跨域配置
+    │   │   ├── JwtInterceptor.java # JWT拦截器
+    │   │   ├── Result.java         # 统一返回结果
+    │   │   └── WebConfig.java      # Web配置
+    │   ├── controller/      # 控制器层
+    │   ├── dao/            # 数据访问层
+    │   ├── entity/         # 实体类
+    │   ├── exception/      # 异常处理
+    │   └── service/        # 服务层
+    └── resources/
+        ├── application.yml  # 配置文件
+        └── mapper/         # MyBatis映射文件
 
 ## 快速开始
 
