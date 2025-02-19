@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.springboot_project.dao.ClassroomDao">
+
+    <select id="findBySearch" resultType="org.example.springboot_project.entity.Classroom">
+        select * from classroom
+        <where>
+            <if test="params != null and params.position != null and params.position != ''">
+                and position like concat('%', #{ params.position },'%')
+            </if>
+        </where>
+    </select>
+
+
+
+</mapper>
